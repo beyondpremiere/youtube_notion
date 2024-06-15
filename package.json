@@ -15,7 +15,6 @@
     "mac": {
       "category": "public.app-category.utilities",
       "target": [
-        "dmg",
         "zip"
       ],
       "icon": "path/to/your/icon.icns",
@@ -43,21 +42,7 @@
         "to": "whisper",
         "filter": ["**/*"]
       }
-    ],
-    "dmg": {
-      "contents": [
-        {
-          "x": 130,
-          "y": 220
-        },
-        {
-          "x": 410,
-          "y": 220,
-          "type": "link",
-          "path": "/Applications"
-        }
-      ]
-    }
+    ]
   },
   "devDependencies": {
     "electron": "^30.1.0",
