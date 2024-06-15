@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Upload and Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">muse.ai</div>
+      <nav>
+        <ul>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Monetize</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="header">
+        <div class="search-container">
+          <input type="text" placeholder="Search your videos" class="search-bar">
+        </div>
+        <div class="header-buttons">
+          <button class="record-button">Record</button>
+          <button class="upload-button" id="uploadButton">Upload</button>
+          <button class="account-button">Account</button>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Your Videos</h2>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </div>
+    <input type="file" id="videoFile" accept="video/*" style="display:none" />
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <video id="modalVideo" controls>
+          <source id="modalVideoSource" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
